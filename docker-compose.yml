@@ -35,9 +35,9 @@ services:
   judge-server:
     # image: registry.cn-hangzhou.aliyuncs.com/onlinejudge/judge_server
     # 原版镜像
-    # image: registry.cn-hangzhou.aliyuncs.com/wenjian_oj/judgeserver
+    image: registry.cn-hangzhou.aliyuncs.com/wenjian_oj/judgeserver
     # 开发版镜像
-    image: luyencode/judge-server
+    #image: luyencode/judge-server
     # 稳定版镜像
     container_name: judge-server
     restart: always
@@ -86,5 +86,5 @@ services:
       # - FORCE_HTTPS=1
       # - STATIC_CDN_HOST=cdn.oj.com
     ports:
-      - "0.0.0.0:80:8000"
-      - "0.0.0.0:443:1443"
+      - "0.0.0.0:8888:8000"
+      - "0.0.0.0:4443:1443"

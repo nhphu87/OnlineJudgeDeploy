@@ -15,4 +15,10 @@ Live site: https://nhpoj.ddns.net:8888
    sudo curl -sSL get.docker.com | sh
    ```
 
+3. Restore db
+   Thư mục chuyển vào usr/local/bin để restore db 
+   ```bash
+   psql -f /root/db_backup_xxxxxxx.sql -U onlinejudge
+   ```
+
 Tài liệu: http://opensource.qduoj.com/
